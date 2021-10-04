@@ -21,7 +21,7 @@ export default function AsteroidPage() {
 
   return (
     <>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         {Object.keys(uniqueAsteroid).length ? (
           <Box sx={{ bgcolor: "#cfe8fc" }} className="p-3 m-3">
             <Breadcrumbs aria-label="breadcrumb" className="mb-2">
