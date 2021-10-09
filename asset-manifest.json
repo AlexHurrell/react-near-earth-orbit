@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-near-earth-orbit/static/css/main.2e7919c8.chunk.css",
+    "main.js": "/react-near-earth-orbit/static/js/main.e78cf3f0.chunk.js",
+    "main.js.map": "/react-near-earth-orbit/static/js/main.e78cf3f0.chunk.js.map",
+    "runtime-main.js": "/react-near-earth-orbit/static/js/runtime-main.884f2539.js",
+    "runtime-main.js.map": "/react-near-earth-orbit/static/js/runtime-main.884f2539.js.map",
+    "static/css/2.f2512455.chunk.css": "/react-near-earth-orbit/static/css/2.f2512455.chunk.css",
+    "static/js/2.4dcc187d.chunk.js": "/react-near-earth-orbit/static/js/2.4dcc187d.chunk.js",
+    "static/js/2.4dcc187d.chunk.js.map": "/react-near-earth-orbit/static/js/2.4dcc187d.chunk.js.map",
+    "static/js/3.bc142536.chunk.js": "/react-near-earth-orbit/static/js/3.bc142536.chunk.js",
+    "static/js/3.bc142536.chunk.js.map": "/react-near-earth-orbit/static/js/3.bc142536.chunk.js.map",
+    "index.html": "/react-near-earth-orbit/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/react-near-earth-orbit/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.2e7919c8.chunk.css.map": "/react-near-earth-orbit/static/css/main.2e7919c8.chunk.css.map",
+    "static/js/2.4dcc187d.chunk.js.LICENSE.txt": "/react-near-earth-orbit/static/js/2.4dcc187d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.884f2539.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.4dcc187d.chunk.js",
+    "static/css/main.2e7919c8.chunk.css",
+    "static/js/main.e78cf3f0.chunk.js"
+  ]
+}
