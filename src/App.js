@@ -3,14 +3,14 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import AsteroidPage from "./AsteroidPage";
+import AsteroidPage from "./pages/AsteroidPage";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { fetchAsteroids } from "./actions";
-import { asteroids } from "./selectors";
+import { fetchAsteroids } from "./redux/actions";
+import { asteroids } from "./redux/selectors";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { Container } from "@mui/material";
-import AsteroidsPage from "./AsteroidsPage";
+import AsteroidsPage from "./pages/AsteroidsPage";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   });
 
   return (
-    <div className="d-flex flex-column" style={{ height: '100vh' }}>
+    <div className="d-flex flex-column full-height">
       <Box>
         <AppBar position="static">
           <Toolbar>
@@ -32,7 +32,7 @@ function App() {
           </Toolbar>
         </AppBar>
       </Box>
-      <div style={{ flex: 1 }} className="m-3">
+      <div className="m-3 main">
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
@@ -50,9 +50,9 @@ function App() {
           </Switch>
         </BrowserRouter>
       </div>
-      <Container style={{ textAlign: 'center' }}>
+      <Container className="footer">
         <Typography variant="subtitle2" className="p-1">
-          {'Data fetched from the Asteroids NeoWs open api from nasa - https://api.nasa.gov/ '}
+          Data fetched from the Asteroids NeoWs open api from nasa - https://api.nasa.gov/ 
         </Typography>
       </Container>
     </div>

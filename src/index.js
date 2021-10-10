@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { asteroidReducer } from "./reducer";
+import { asteroidReducer } from "./redux/reducer";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 let store = createStore(asteroidReducer, applyMiddleware(thunk));

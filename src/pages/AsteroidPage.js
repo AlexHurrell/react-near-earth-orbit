@@ -5,10 +5,9 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { asteroid } from "./selectors";
-import { fetchAsteroids } from "./actions";
+import { asteroid } from "../redux/selectors";
+import { fetchAsteroids } from "../redux/actions";
 import Tooltip from '@mui/material/Tooltip';
 import Fab from '@mui/material/Fab';
 import React from "react";
@@ -39,7 +38,7 @@ export default function AsteroidPage() {
       <Container maxWidth="sm" className="m-2">
         <Paper elevation={3}>
           {Object.keys(uniqueAsteroid).length && (
-            <Box style={{ borderRadius: '5px' }} bgcolor="primary.light" color="primary.contrastText" >
+            <Box className="asteroid-box" bgcolor="primary.light" color="primary.contrastText" >
               <Box className="p-3">
                 <Box className="mb-3 d-flex justify-content-between">
                   <h4>{uniqueAsteroid.name}</h4>

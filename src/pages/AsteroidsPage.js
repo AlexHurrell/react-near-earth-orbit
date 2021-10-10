@@ -1,7 +1,7 @@
 
 import { Box, Breadcrumbs } from "@mui/material";
 import React from "react";
-import AsteroidCard from "./AsteroidCard";
+import AsteroidCard from "../components/AsteroidCard";
 
 export default function AsteroidsPage(asteroids) {
 
@@ -14,7 +14,6 @@ export default function AsteroidsPage(asteroids) {
                     {Object.keys(asteroidList)[0]}
                 </span>
             </Breadcrumbs>
-
             <Box className="d-flex flex-wrap">
                 {asteroidList[Object.keys(asteroidList)[0]].map(
                     (asteroid) => {
