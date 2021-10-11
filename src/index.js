@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { asteroidReducer } from "./redux/reducer";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-let store = createStore(asteroidReducer, applyMiddleware(thunk));
+export const store = createStore(asteroidReducer, applyMiddleware(thunk));
 
 const theme = createTheme({
   palette: {
@@ -29,7 +29,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </ThemeProvider>,
-  document.getElementById("root")
+  document.getElementById("root") || document.createElement('div')
 );
 
 // If you want to start measuring performance in your app, pass a function

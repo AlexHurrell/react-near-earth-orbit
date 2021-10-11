@@ -17,8 +17,8 @@ export default function AsteroidPage() {
   const dispatch = useDispatch();
 
   const { id } = useParams();
-  const uniqueAsteroid = useSelector(asteroid(id));
 
+  const uniqueAsteroid = useSelector(asteroid(id)) ?? [];
 
   useEffect(() => {
     dispatch(fetchAsteroids());
@@ -29,13 +29,13 @@ export default function AsteroidPage() {
       {Object.keys(uniqueAsteroid).length && (
         <Breadcrumbs aria-label="breadcrumb">
 
-          <Link to={`/`} color="inherit">
+          <Link to={`/`} color="inherit" role="back">
             {uniqueAsteroid.close_approach_data[0].close_approach_date}
           </Link>
           <span>{uniqueAsteroid.name}</span>
         </Breadcrumbs>
       )}
-      <Container maxWidth="sm" className="m-2">
+      <Container maxWidth="sm" className="m-2" role="asteroid-page">
         <Paper elevation={3}>
           {Object.keys(uniqueAsteroid).length && (
             <Box className="asteroid-box" bgcolor="primary.light" color="primary.contrastText" >
@@ -49,7 +49,7 @@ export default function AsteroidPage() {
                         to={{ pathname: uniqueAsteroid.nasa_jpl_url }}
                         target="_blank"
                       >
-                        <Fab aria-label="add">
+                        <Fab>
                           <OpenInNewIcon />
                         </Fab>
                       </Link>

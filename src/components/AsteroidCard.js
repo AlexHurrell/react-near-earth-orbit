@@ -14,6 +14,7 @@ export default function AsteroidCard(asteroids) {
                     key={asteroid.id}
                     sx={{ minWidth: 275 }}
                     className="m-2"
+                    data-testid={asteroid.id}
                 >
                     <Box bgcolor="primary.light">
                         <CardContent>
